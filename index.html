@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>wireframer2</title>
+	<style type="text/css">
+		.container {
+			display: flex;
+			flex: 1;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		#canvas {
+			outline: 2px solid gray;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<section>
+			<p><em>To draw:</em> Click and drag on the canvas</p>
+		</section>
+		<section>
+			<button id="btn_undo" type="button">Undo</button>
+			<button id="btn_clear" type="button">Clear</button>
+			<button id="btn_expand" type="button">Expand</button>
+			<button id="btn_shrink" type="button">Shrink</button>
+		</section>
+		<canvas id="canvas" resizable="true"></canvas>
+		<section>
+			<p><em>To save:</em> Right-click the canvas and save</p>
+			<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/edwinhollen/Wireframer2">github.com/edwinhollen/Wireframer2</a></p>
+		</section>
+	</div>
+
+	<script src="./wireframer2.js"></script>
+</body>
+
+</html>
